@@ -23,25 +23,30 @@
     </div>
     <div class="content">
                 <h1 class="pre-order-head">Contact us</h1>
-                <form action="/action_page.php">
+                <form id="contactForm" action="/action_page.php">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
-                
+                  
                     <label for="lname">Last Name</label>
                     <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
-                
+                  
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.."><br>
+                  
                     <label for="country">Country</label>
-                    <select id="country" name="country"><br>
+                    <select id="country" name="country">
                       <option value="australia">Australia</option>
                       <option value="canada">Canada</option>
                       <option value="usa">USA</option>
                     </select><br>
-                
+                  
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
-                
+                  
                     <input type="submit" value="Submit"><br>
                   </form>
+                  
+                  <p id="formMessage"></p>
     </div>
     <div class="footer">
         <p class="sentence-footer"><span>Sandbox Studios</span></p>
@@ -65,7 +70,6 @@
 </div>
 
 <script>
-    // not my script
     var header = document.getElementsByClassName("nav");
     var btns = header.getElementsByClassName("link");
     for (var i = 0; i < btns.length; i++) {
@@ -76,5 +80,9 @@
       });
     }
     </script>
+
+<script src="contact.js"></script>
+
+
 </body>
 </html>

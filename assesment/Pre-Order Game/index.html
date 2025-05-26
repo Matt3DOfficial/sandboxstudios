@@ -29,6 +29,27 @@
         <div class="right-float">
             <div class="overlay">
                 <h1 class="pre-order-head">Pre - Order MANHUNT</h1>
+
+                <form id="preOrderForm">
+                    <label for="name">Name:</label><br />
+                    <input type="text" id="name" name="name" required /><br /><br />
+                
+                    <label for="email">Email:</label><br />
+                    <input type="email" id="email" name="email" required /><br /><br />
+                
+                    <label for="quantity">Quantity:</label><br />
+                    <select id="quantity" name="quantity">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select><br /><br />
+                
+                    <button type="submit">Pre-Order</button>
+                  </form>
+                
+                  <p id="message"></p>
+                
+                  <script src="preorder.js"></script>
             </div>
             <div class="image-effect-container">
                 <!-- <img src="manhunt-fade.png" alt="game banner/image logo" class="img-overlay top"> -->
