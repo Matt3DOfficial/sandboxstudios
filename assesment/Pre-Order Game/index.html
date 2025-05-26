@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox Studios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="nav">
+        <a href="../Home/index.html" class="link">home
+    
+    </a>
+        <a href="../Contact/contact.html" class="link">contact
+        </a>
+        <a href="../About Game/aboutgame.html" class="link">about game
+        </a>
+        <a href="../Pre-Order Game/index.html" class="link active">pre order game
+        </a>
+        <a href="../Other Games/index.html" class="link">other games
+        </a>
+    </div>
+    <div class="content">
+        <!-- <img src="manhunt.png" alt="game banner/image logo" class="banner">
+        <h1 class="pre-order-head">
+            MANHUNT - Available For Pre - Order
+        </h1> -->
+        <div class="right-float">
+            <div class="overlay">
+                <h1 class="pre-order-head">Pre - Order MANHUNT</h1>
+            </div>
+            <div class="image-effect-container">
+                <!-- <img src="manhunt-fade.png" alt="game banner/image logo" class="img-overlay top"> -->
+                <img src="manhunt-fade.png" alt="game banner/image logo" class="bottom">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="sentence-footer"><span>Sandbox Studios</span></p>
+        <p class="sentence-footer">Creating immersive worlds, one game at a time.</p>
+        <p class="sentence-footer">Quick Links:
+            <li>home</li>
+            <li>contact</li>
+            <li>about_game</li>
+            <li>pre-order</li>
+            <li>other_games</li>
+            <li>about_us</li>
+            <li>careers</li>
+            <li>privacy-policy</li>
+            <li>terms_of_service</li>
+            <li>contact_us</li>
+        </p>
+        <p class="sentence-footer"></p>
+        <p class="sentence-footer"></p>
+        <p class="trademark-footer">© 2025 Sandbox Studios. All Rights Reserved. Crafted with Passion | Powered by Creativity</p>
+    </div>
+</div>
+
+<script>
+    // not my script
+    var header = document.getElementsByClassName("nav");
+    var btns = header.getElementsByClassName("link");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+</body>
+</html>
